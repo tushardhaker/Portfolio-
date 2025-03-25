@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        /* General Page Styling */
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298, #ff94a4);
+            /* Softer Pink Shade */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+
+
+        /* Profile Card */
+        .profile-container {
+            background: rgba(255, 255, 255, 0.15);
+            /* Glass effect */
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.3),
+                -8px -8px 16px rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            text-align: center;
+            width: 380px;
+            color: white;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .profile-container:hover {
+            transform: scale(1.02);
+        }
+
+        /* Profile Picture with Black Ring */
+        .profile-pic {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid black;
+            /* Black outer ring */
+            padding: 5px;
+            background: white;
+        }
+
+        /* Name & Title */
+        .name {
+            font-size: 26px;
+            font-weight: 600;
+            margin-top: 15px;
+        }
+
+        .bio {
+            font-size: 16px;
+            color: #f0f0f0;
+            margin-bottom: 18px;
+        }
+
+        /* Attractive Buttons */
+        .link-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            text-decoration: none;
+            color: black;
+            padding: 12px;
+            border-radius: 10px;
+            margin: 10px 0;
+            font-size: 17px;
+            font-weight: bold;
+            text-transform: uppercase;
+            background: white;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
+            border: none;
+        }
+
+        .link-button:hover {
+            background: #f0f0f0;
+            transform: scale(1.05) translateY(-3px);
+            box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Button Logos */
+        .button-logo {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="profile-container">
+        <img src="WhatsApp Image 2025-02-05 at 11.46.37_a28fef88.jpg" alt="Profile Picture" class="profile-pic">
+        <h2 class="name">Tushar Dhaker</h2>
+        <p class="bio">
+            <strong>Software Developer</strong> | B.Tech CSE (AI) | 2nd-Year at <strong>JECRC (2023-2027)</strong> |
+            Passionate About Innovation & Problem-Solving
+        </p>
+
+        <!-- GitHub Button -->
+        <a href="https://github.com/tushardhaker" class="link-button" target="_blank">
+            <i class="fa-brands fa-github button-logo"></i> GitHub
+        </a>
+
+        <!-- LinkedIn Button -->
+        <a href="https://www.linkedin.com/in/tushar-dhaker-549633295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            class="link-button" target="_blank">
+            <i class="fa-brands fa-linkedin button-logo"></i> LinkedIn
+        </a>
+
+        <!-- LeetCode Button -->
+        <a href="https://leetcode.com/tushardhaker" class="link-button" target="_blank">
+            <i class="fa-solid fa-code button-logo"></i> LeetCode
+        </a>
+
+        <!-- Resume Button -->
+        <a href="https://drive.google.com/file/d/1HcI-59UC-MOeDQm0mTL42zmKljsN9rjw/view?usp=sharing" class="link-button"
+            target="_blank">
+            <i class="fa-solid fa-file button-logo"></i> Resume
+        </a>
+    </div>
+
+</body>
+
+</html>
