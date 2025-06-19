@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Outfit', sans-serif;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  background: linear-gradient(135deg, #1b1423, #203a43, #2c5364);
   color: #eee;
   line-height: 1.6;
   scroll-behavior: smooth;
@@ -80,7 +80,7 @@ nav ul li a:hover::after {
 .hero {
   text-align: center;
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, #418f9f, #530028);
+  background: linear-gradient(135deg, #b04a84, #2a4b78);
   color: #fff;
   animation: fadeIn 1.5s ease;
 }
@@ -89,10 +89,10 @@ nav ul li a:hover::after {
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  border: 5px solid #fff;
+  border: 5px solid #000000;
   object-fit: cover;
   margin-bottom: 1rem;
-  box-shadow: 0 0 25px #ffffff88;
+  box-shadow: 0 0 25px #00000088;
 }
 
 .hero-text h2 {
@@ -152,7 +152,7 @@ section h2 {
 
 /* Projects */
 .project-card {
-  background: #ffffff10;
+  background: #a91b1b10;
   margin-bottom: 2rem;
   padding: 1.5rem;
   border-left: 5px solid #f2aa4c;
