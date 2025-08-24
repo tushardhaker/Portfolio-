@@ -35,7 +35,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: #000000cc;
-  padding: 1rem 2rem;
+  padding: 1rem 5%;
   color: #fff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   position: sticky;
@@ -53,7 +53,7 @@ nav {
 
 nav ul {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   list-style: none;
 }
 
@@ -76,27 +76,37 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
+/* Hamburger Menu for Mobile */
+.nav-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
 /* Hero Section */
 .hero {
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 3rem 5%;
   background: linear-gradient(135deg, #b04a84, #2a4b78);
   color: #fff;
   animation: fadeIn 1.5s ease;
 }
 
 .profile-pic {
-  width: 180px;
-  height: 180px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   border: 5px solid #000000;
   object-fit: cover;
-  margin-bottom: 1rem;
+  margin: 0 auto 1rem;
   box-shadow: 0 0 25px #00000088;
 }
 
 .hero-text h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 0.5rem;
   animation: blink 2s infinite alternate;
 }
@@ -113,6 +123,7 @@ nav ul li a:hover::after {
   font-weight: bold;
   border: none;
   margin-top: 1rem;
+  display: inline-block;
   transition: all 0.3s ease;
 }
 .btn:hover {
@@ -123,15 +134,15 @@ nav ul li a:hover::after {
 
 /* Sections */
 section {
-  padding: 4rem 2rem;
+  padding: 3rem 5%;
   max-width: 1100px;
   margin: auto;
 }
 
 section h2 {
   text-align: center;
-  font-size: 2.2rem;
-  margin-bottom: 2rem;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
   color: #f2aa4c;
   text-shadow: 0 0 8px #f2aa4c66;
   border-bottom: 3px solid #f2aa4c;
@@ -142,7 +153,7 @@ section h2 {
 #about p {
   text-align: center;
   background: #ffffff10;
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 12px;
   font-size: 1.1rem;
   color: #eee;
@@ -153,7 +164,7 @@ section h2 {
 /* Projects */
 .project-card {
   background: #a91b1b10;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   padding: 1.5rem;
   border-left: 5px solid #f2aa4c;
   border-radius: 12px;
@@ -172,12 +183,35 @@ section h2 {
   color: #00ccff;
 }
 
+.toggle-btn {
+  background: #f2aa4c;
+  color: #101820;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+.toggle-btn:hover {
+  background: #e67e22;
+}
+
+.features-list {
+  display: none;
+  list-style: disc;
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+.features-list li {
+  margin-bottom: 0.5rem;
+}
+
 /* Skills Section */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .skill-card {
@@ -220,7 +254,7 @@ section h2 {
   font-weight: bold;
   border-radius: 30px;
   transition: all 0.3s;
-  margin: auto;
+  margin: 1rem auto;
   display: block;
 }
 .resume-btn:hover {
@@ -267,7 +301,7 @@ footer {
   color: #f2aa4c;
   padding: 1.2rem;
   font-size: 0.95rem;
-  margin-top: 4rem;
+  margin-top: 3rem;
   text-shadow: 0 0 10px #f2aa4c44;
 }
 
@@ -280,4 +314,162 @@ footer {
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile-Friendly Media Queries */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 3%;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .nav-toggle {
+    display: block;
+    position: absolute;
+    right: 3%;
+    top: 1.5rem;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li {
+    text-align: center;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+  }
+
+  .hero {
+    padding: 2rem 3%;
+  }
+
+  .hero-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  section {
+    padding: 2rem 3%;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  #about p {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .project-card p {
+    font-size: 0.9rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .skill-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .skill-card ul li {
+    font-size: 0.9rem;
+  }
+
+  .resume-btn, .social-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  #contact p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  section h2 {
+    font-size: 1.3rem;
+  }
+
+  #about p {
+    font-size: 0.9rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-card p {
+    font-size: 0.85rem;
+  }
+
+  .skill-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .skill-card ul li {
+    font-size: 0.85rem;
+  }
+
+  .resume-btn, .social-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  #contact p {
+    font-size: 0.9rem;
+  }
+
+  footer {
+    font-size: 0.85rem;
+  }
 }
