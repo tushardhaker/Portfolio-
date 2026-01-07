@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-  
 </head>
 <body>
   <header>
@@ -31,27 +30,39 @@
     </div>
   </header>
 
-  
   <section id="about">
-  <h2>About Me</h2>
-  <p>
-    <strong>
-      I'm a 3rd-year B.Tech student at JECRC Foundation, Jaipur, specializing in Computer Science and Artificial Intelligence.
-      I have a strong interest in software engineering. 
-      I enjoy building modern web applications,
-      solving real-world problems through code, and constantly learning new technologies.
-      Apart from academics, I actively participate in coding competitions, tech fests, and development projects.
-    </strong>
-  </p>
-</section>
->
+    <h2>About Me</h2>
+    <p>
+      <strong>
+        I'm a 3rd-year B.Tech student at JECRC Foundation, Jaipur, specializing in Computer Science and Artificial Intelligence.
+        I have a strong interest in software engineering. 
+        I enjoy building modern web applications,
+        solving real-world problems through code, and constantly learning new technologies.
+        Apart from academics, I actively participate in coding competitions, tech fests, and development projects.
+      </strong>
+    </p>
+  </section>
 
   <section id="projects">
     <h2>Projects</h2>
 
     <div class="project-card">
+      <h3>🛒 MyShop.pro – Multi-Vendor E-commerce Platform</h3>
+      <p>A high-performance multi-vendor marketplace featuring dedicated dashboards for vendors and customers. Built to handle inventory, sales analytics, and seamless payment processing.</p>
+      <a href="https://myshop-pro-tushar-2004.vercel.app/" target="_blank">Visit Live Project</a>
+      <button class="toggle-btn" onclick="toggleFeatures('myshop-features')">🔽 Key Features</button>
+      <ul class="features-list" id="myshop-features">
+        <li>Dual-role Dashboards: Separate interfaces for Shopkeepers and Customers</li>
+        <li>Analytics Engine: Track Revenue, Top-selling items, and Low-stock alerts</li>
+        <li>Secure Auth: Login based on unique Email-ID and Password</li>
+        <li>Payment Integration: Supports COD and Online Payments (UPI, Net Banking)</li>
+        <li>Tech Stack: HTML5, CSS3, JS (ES6+), Node.js, Express.js, PostgreSQL/MySQL</li>
+      </ul>
+    </div>
+
+    <div class="project-card">
       <h3>📝 Gradeify</h3>
-      <p>Gradeify is a comprehensive result management system designed for educational institutions. It streamlines academic record handling for students, faculty, and the HOD through a role-based dashboard. The platform simplifies mid-term mark submission, result viewing, and institutional communication.</p>
+      <p>Gradeify is a comprehensive result management system designed for educational institutions. It streamlines academic record handling for students, faculty, and the HOD through a role-based dashboard.</p>
       <a href="https://gradify.infinityfree.me/dept/Home.php" target="_blank">Visit Live Project</a>
       <button class="toggle-btn" onclick="toggleFeatures('gradeify-features')">🔽 Key Features</button>
       <ul class="features-list" id="gradeify-features">
@@ -59,126 +70,107 @@
         <li>Mid-term marks upload, filter & view system</li>
         <li>Broadcast messages and attachments by HOD</li>
         <li>Automated role-based access control</li>
-        <li>Built using PHP, MySQL, and deployed locally</li>
+        <li>Built using PHP, MySQL</li>
       </ul>
     </div>
 
-        <div class="project-card">
-  <h3>📚 Smart Library Management System (LMS)</h3>
-  <p>To create a digital platform that automates and simplifies library operations like managing books, issuing/returning books, user management, and tracking transactions.</p>
-  <a href="https://library.infinityfree.me/index.php" target="_blank">Visit Live Project</a>
-  <button class="toggle-btn" onclick="toggleFeatures('lms-features')">🔽 Key Features</button>
-  <ul class="features-list" id="lms-features">
-    <li>Role-based login (User, Admin, Super Admin)</li>
-    <li>Book issue/return system with due tracking</li>
-    <li>Admin can manage books and users</li>
-    <li>Feedback and book suggestions feature</li>
-    <li>Built with HTML, CSS , PHP, MySQL, and hosted with Railway</li>
-  </ul>
-</div>
+    <div class="project-card">
+      <h3>📚 Smart Library Management System (LMS)</h3>
+      <p>A digital platform that automates library operations like book issuing/returning, user management, and transaction tracking.</p>
+      <a href="https://library.infinityfree.me/index.php" target="_blank">Visit Live Project</a>
+      <button class="toggle-btn" onclick="toggleFeatures('lms-features')">🔽 Key Features</button>
+      <ul class="features-list" id="lms-features">
+        <li>Role-based login (User, Admin, Super Admin)</li>
+        <li>Book issue/return system with due tracking</li>
+        <li>Admin can manage books and users</li>
+        <li>Feedback and book suggestions feature</li>
+        <li>Built with HTML, CSS, PHP, MySQL</li>
+      </ul>
+    </div>
     
     <div class="project-card">
-  <h3>🎯 Number Guessing Game</h3>
-  <p>
-    A simple yet engaging web-based game where the player tries to guess a randomly generated number within a limited number of attempts. It offers real-time feedback like "Too High" or "Too Low" and includes a restart option. Great for practicing logical thinking and UI interaction.
-  </p>
-  <a href="https://github.com/tushardhaker/CODSOFT_OLD/blob/main/guess.java" target="_blank">View Project</a>
-  <button class="toggle-btn" onclick="toggleFeatures('guessinggame-features')">🔽 Key Features</button>
-  <ul class="features-list" id="guessinggame-features">
-    <li>Random number generation between 1–100</li>
-    <li>Interactive feedback on guesses</li>
-    <li>Guess attempt tracking and display</li>
-    <li>Game restart functionality</li>
-    <li>Built using Java Programming</li>
-  </ul>
-</div>
-
+      <h3>🎯 Number Guessing Game</h3>
+      <p>An engaging web-based game where players guess a randomly generated number within limited attempts with real-time feedback.</p>
+      <a href="https://github.com/tushardhaker/CODSOFT_OLD/blob/main/guess.java" target="_blank">View Project</a>
+      <button class="toggle-btn" onclick="toggleFeatures('guessinggame-features')">🔽 Key Features</button>
+      <ul class="features-list" id="guessinggame-features">
+        <li>Random number generation between 1–100</li>
+        <li>Interactive feedback on guesses</li>
+        <li>Guess attempt tracking and display</li>
+        <li>Built using Java Programming</li>
+      </ul>
+    </div>
   </section>
 
- <section id="skills">
-  <h2>Skills</h2>
-  <div class="skills-grid">
-
-    <div class="skill-card">
-      <h3>👨‍💻 Programming Languages</h3>
-      <ul>
-        <li>Java</li>
-        <li>PHP</li>
-        <li>C</li>
-      </ul>
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>👨‍💻 Programming Languages</h3>
+        <ul>
+          <li>Java</li>
+          <li>PHP</li>
+          <li>C</li>
+          <li>JavaScript (ES6+)</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>🌐 Web Development</h3>
+        <ul>
+          <li>HTML / CSS</li>
+          <li>Java Script</li>
+          <li>Bootstrap</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>🗄️ Database</h3>
+        <ul>
+          <li>MySQL</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>📚 Core CS Concepts</h3>
+        <ul>
+          <li>DSA (Data Structures & Algorithms)</li>
+          <li>OOP's</li>
+          <li>Operating System</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>💬 Soft Skills</h3>
+        <ul>
+          <li>Teamwork</li>
+          <li>Communication</li>
+        </ul>
+      </div>
     </div>
+  </section>
 
-    <div class="skill-card">
-      <h3>🌐 Web Development</h3>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-      </ul>
-    </div>
-
-    <div class="skill-card">
-      <h3>🗄️ Database</h3>
-      <ul>
-        <li>MySQL</li>
-      </ul>
-    </div>
-
-    <div class="skill-card">
-      <h3>📚 Core CS Concepts</h3>
-      <ul>
-        <li>DSA (Data Structures & Algorithms)</li>
-        <li>OOP'S</li>
-      </ul>
-    </div>
-
-    <div class="skill-card">
-      <h3>💬 Soft Skills</h3>
-      <ul>
-        <li>Teamwork</li>
-        <li>Communication</li>
-      </ul>
-    </div>
-
-  </div>
-</section>
-
-
-  <!-- RESUME SECTION -->
-<section id="resume">
-  <h2>Resume</h2>
-  <a class="resume-btn" href="https://drive.google.com/file/d/1nvGyLyXIiXhhVCAcW3UJ4gOCChWtRlxN/view?usp=sharing" target="_blank">
-    📄 View Resume (Download)
-  </a>
-</section>
-
-<section id="social">
-  <h2>Social Links</h2>
-  <div class="social-buttons-named">
-    <a class="social-btn" href="https://github.com/tushardhaker" target="_blank">
-      <i class="fab fa-github"></i> GitHub
+  <section id="resume">
+    <h2>Resume</h2>
+    <a class="resume-btn" href="https://drive.google.com/file/d/1NKd2P-zI9qTEcWN8LaRRF2I9ewXj0tst/view?usp=sharing" target="_blank">
+      <i class="fas fa-file-pdf"></i> View Resume (Download)
     </a>
-    <a class="social-btn" href="https://www.hackerrank.com/profile/tushardhaker2004" target="_blank">
-      <i class="fab fa-hackerrank"></i> HackerRank
-    </a>
-    <a class="social-btn" href="https://www.linkedin.com/in/tushar-dhaker-549633295" target="_blank">
-      <i class="fab fa-linkedin"></i> LinkedIn
-    </a>
-    <a class="social-btn" href="https://leetcode.com/u/tushardhaker/" target="_blank">
-      <i class="fas fa-code"></i> LeetCode
-    </a>
-  </div>
-</section>
+  </section>
 
+  <section id="social">
+    <h2>Social Links</h2>
+    <div class="social-buttons-named">
+      <a class="social-btn" href="https://github.com/tushardhaker" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a class="social-btn" href="https://www.hackerrank.com/profile/tushardhaker2004" target="_blank"><i class="fab fa-hackerrank"></i> HackerRank</a>
+      <a class="social-btn" href="https://www.linkedin.com/in/tushar-dhaker-549633295" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a class="social-btn" href="https://leetcode.com/u/tushardhaker/" target="_blank"><i class="fas fa-code"></i> LeetCode</a>
+    </div>
+  </section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:tushardhaker.csai27@jecrc.ac.in">tushardhaker.csai27@jecrc.ac.in</a></p>
-  <p>Mobile no: <a href="mobile number">6375564791</a></p>
-</section>
-
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:tushardhaker.csai27@jecrc.ac.in">tushardhaker.csai27@jecrc.ac.in</a></p>
+    <p>Mobile no: <a href="tel:6375564791">6375564791</a></p>
+  </section>
 
   <footer>
-    <p>&copy; 2025 All rights reserved.</p>
+    <p>&copy; 2025 Tushar Dhaker. All rights reserved.</p>
   </footer>
 
   <script>
