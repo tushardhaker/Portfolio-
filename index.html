@@ -443,7 +443,7 @@ footer{padding:2rem clamp(1.2rem,4vw,4rem);background:var(--bg);border-top:1px s
   </div>
 </section>
 
-<!-- PROJECTS -->
+<!-- PROJECTS – MODIFIED -->
 <section class="sec" id="projects">
   <div class="sec-inner">
     <div class="sec-hd rv">
@@ -454,7 +454,34 @@ footer{padding:2rem clamp(1.2rem,4vw,4rem);background:var(--bg);border-top:1px s
     </div>
     <div class="proj-grid">
 
+      <!-- NEW PROJECT: HireBee (moved to first position) -->
       <article class="p-card rv d1">
+        <div class="p-img">
+          <div class="p-img-bg" style="background:linear-gradient(135deg,#1a0d2e,#2e0d1a)"></div>
+          <div class="p-img-overlay"><a href="https://hir-bee.vercel.app/" target="_blank" class="p-visit">Visit Live</a></div>
+        </div>
+        <div class="p-body">
+          <h3 class="p-title">🐝 HireBee – Freelancing Platform</h3>
+          <p class="p-desc">Full-stack SaaS freelancing marketplace connecting clients and freelancers with secure escrow payments, subscription plans, and role-based dashboards.</p>
+          <div class="p-tags">
+            <span class="p-tag">HTML/CSS/JS</span>
+            <span class="p-tag">Spring Boot</span>
+            <span class="p-tag">Java</span>
+            <span class="p-tag">MySQL</span>
+            <span class="p-tag">Razorpay</span>
+          </div>
+          <button class="ftg-btn" onclick="tog('ftg1')">⊕ Key Features</button>
+          <ul class="ftg-list" id="ftg1">
+            <li>Secure Escrow Wallet System + automated Razorpay payment flows</li>
+            <li>Google OAuth2 login with role-based access (Admin / Client / Freelancer)</li>
+            <li>Subscription Engine with Spring Scheduler for automatic plan transitions & downgrades</li>
+            <li>Secure session handling and midnight background job processing</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- MyShop.pro (now second) -->
+      <article class="p-card rv d2">
         <div class="p-img">
           <div class="p-img-bg" style="background:linear-gradient(135deg,#0d1a2e,#1a0d2e)"></div>
           <div class="p-img-overlay"><a href="https://myshop-pro-tushar-2004.vercel.app/" target="_blank" class="p-visit">Visit Live</a></div>
@@ -463,8 +490,8 @@ footer{padding:2rem clamp(1.2rem,4vw,4rem);background:var(--bg);border-top:1px s
           <h3 class="p-title">🛒 MyShop.pro</h3>
           <p class="p-desc">Multi-vendor e-commerce platform with dedicated dashboards for vendors and customers, inventory management & payment processing.</p>
           <div class="p-tags"><span class="p-tag">HTML/CSS/JS</span><span class="p-tag">Spring Boot</span><span class="p-tag">MySQL</span></div>
-          <button class="ftg-btn" onclick="tog('ftg1')">⊕ Key Features</button>
-          <ul class="ftg-list" id="ftg1">
+          <button class="ftg-btn" onclick="tog('ftg2')">⊕ Key Features</button>
+          <ul class="ftg-list" id="ftg2">
             <li>Dual-role dashboards for Shopkeepers and Customers</li>
             <li>Analytics: Revenue tracking, top items, low-stock alerts</li>
             <li>Secure auth with unique Email-ID and Password</li>
@@ -473,7 +500,8 @@ footer{padding:2rem clamp(1.2rem,4vw,4rem);background:var(--bg);border-top:1px s
         </div>
       </article>
 
-      <article class="p-card rv d2">
+      <!-- Gradeify -->
+      <article class="p-card rv d3">
         <div class="p-img">
           <div class="p-img-bg" style="background:linear-gradient(135deg,#1a1a00,#2a2000)"></div>
           <div class="p-img-overlay"><a href="https://gradify.infinityfree.me/dept/Home.php" target="_blank" class="p-visit">Visit Live</a></div>
@@ -482,8 +510,8 @@ footer{padding:2rem clamp(1.2rem,4vw,4rem);background:var(--bg);border-top:1px s
           <h3 class="p-title">📝 Gradeify</h3>
           <p class="p-desc">Comprehensive result management system for educational institutions with role-based dashboards for students, faculty, and HOD.</p>
           <div class="p-tags"><span class="p-tag">PHP</span><span class="p-tag">MySQL</span></div>
-          <button class="ftg-btn" onclick="tog('ftg2')">⊕ Key Features</button>
-          <ul class="ftg-list" id="ftg2">
+          <button class="ftg-btn" onclick="tog('ftg3')">⊕ Key Features</button>
+          <ul class="ftg-list" id="ftg3">
             <li>Student & faculty login with separate dashboards</li>
             <li>Mid-term marks upload, filter & view system</li>
             <li>HOD broadcast messages and attachment system</li>
@@ -492,7 +520,8 @@ footer{padding:2rem clamp(1.2rem,4vw,4rem);background:var(--bg);border-top:1px s
         </div>
       </article>
 
-      <article class="p-card rv d3">
+      <!-- Smart LMS -->
+      <article class="p-card rv d4">
         <div class="p-img">
           <div class="p-img-bg" style="background:linear-gradient(135deg,#0a1a10,#001a08)"></div>
           <div class="p-img-overlay"><a href="https://library.infinityfree.me/index.php" target="_blank" class="p-visit">Visit Live</a></div>
@@ -501,30 +530,12 @@ footer{padding:2rem clamp(1.2rem,4vw,4rem);background:var(--bg);border-top:1px s
           <h3 class="p-title">📚 Smart LMS</h3>
           <p class="p-desc">Digital platform that automates library operations — book issuing/returning, user management, and transaction tracking.</p>
           <div class="p-tags"><span class="p-tag">HTML/CSS</span><span class="p-tag">PHP</span><span class="p-tag">MySQL</span></div>
-          <button class="ftg-btn" onclick="tog('ftg3')">⊕ Key Features</button>
-          <ul class="ftg-list" id="ftg3">
+          <button class="ftg-btn" onclick="tog('ftg4')">⊕ Key Features</button>
+          <ul class="ftg-list" id="ftg4">
             <li>Role-based login: User, Admin, Super Admin</li>
             <li>Book issue/return system with due-date tracking</li>
             <li>Admin panel to manage books and users</li>
             <li>Feedback and book suggestion feature</li>
-          </ul>
-        </div>
-      </article>
-
-      <article class="p-card rv d4">
-        <div class="p-img">
-          <div class="p-img-bg" style="background:linear-gradient(135deg,#12001a,#1a0010)"></div>
-          <div class="p-img-overlay"><a href="https://github.com/tushardhaker/CODSOFT_OLD/blob/main/guess.java" target="_blank" class="p-visit">View Code</a></div>
-        </div>
-        <div class="p-body">
-          <h3 class="p-title">🎯 Number Guessing Game</h3>
-          <p class="p-desc">Engaging web-based game where players guess a randomly generated number within limited attempts with real-time feedback.</p>
-          <div class="p-tags"><span class="p-tag">Java</span></div>
-          <button class="ftg-btn" onclick="tog('ftg4')">⊕ Key Features</button>
-          <ul class="ftg-list" id="ftg4">
-            <li>Random number generation between 1–100</li>
-            <li>Interactive feedback on every guess</li>
-            <li>Attempt tracking and final score display</li>
           </ul>
         </div>
       </article>
